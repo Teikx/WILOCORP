@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&family=DM+Serif+Display&display=swap');
+
+:root {
+  --paper: #f9f6f1;
+  --ink: #111614;
+  --ink-muted: #4c5a54;
+  --sand: #efe6d8;
+  --sand-border: #e0d6c5;
+
+  font: 18px/150% 'Archivo', sans-serif;
+  letter-spacing: 0.01em;
+  color: var(--ink-muted);
+  background: var(--paper);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at top left, rgba(255, 225, 179, 0.35), transparent 45%),
+    radial-gradient(circle at 20% 70%, rgba(155, 209, 255, 0.25), transparent 55%),
+    linear-gradient(180deg, #fefbf6 0%, #f5efe6 100%);
+  min-height: 100svh;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'DM Serif Display', serif;
+  font-weight: 400;
+  color: var(--ink);
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
